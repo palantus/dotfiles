@@ -20,4 +20,20 @@ vim.keymap.set('n', '[c', function()
   require('treesitter-context').go_to_context(vim.v.count1)
 end, { desc = 'Goto [C]ontext' })
 
+-- Obsidian workflow
+
+-- navigate to vault
+vim.keymap.set("n", "<leader>oo", ":cd /home/ahk/obsidian/Pavault<cr>", { desc = 'Navigate to vault'} )
+--
+-- convert note to template and remove leading white space
+vim.keymap.set("n", "<leader>on", ":ObsidianTemplate Note template<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>", { desc = 'Convert to template' })
+-- strip date from note title and replace dashes with spaces
+-- must have cursor on title
+-- vim.keymap.set("n", "<leader>of", ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>", { desc = 'Convert title' })
+--
+-- search for files in full vault
+vim.keymap.set("n", "<leader>os", ":Telescope find_files search_dirs={\"/home/ahk/obsidian/Pavault\"}<cr>", { desc = 'Search files' })
+vim.keymap.set("n", "<leader>og", ":Telescope live_grep search_dirs={\"/home/ahk/obsidian/Pavault\"}<cr>", { desc = 'Grep files' })
+--
+
 return {}
