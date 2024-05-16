@@ -20,6 +20,12 @@ vim.keymap.set('n', '[c', function()
   require('treesitter-context').go_to_context(vim.v.count1)
 end, { desc = 'Goto [C]ontext' })
 
+
+vim.keymap.set("n", "<leader>gd", ":cd /home/ahk/dev<cr>", { desc = 'cd to dev'})
+vim.keymap.set("n", "<leader>g.", ":cd /home/ahk/dotfiles<cr>", { desc = 'cd to dotfiles'})
+
+
+
 -- Obsidian workflow
 
 -- navigate to vault

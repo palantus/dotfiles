@@ -132,3 +132,4 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 alias lg=lazygit
 alias oo='cd $HOME/obsidian/Pavault'
+alias ov='cd $HOME/obsidian/Pavault && nvim'
