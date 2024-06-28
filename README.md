@@ -12,6 +12,15 @@ ln -s ~/dotfiles/.bashrc ~/.bashrc
 ```bash
 ln -s ~/dotfiles/bin/on.sh ~/.local/bin/on
 ```
+
+## Dependencies
+
+- npm
+- cargo (install using rustup)
+- obsidian vault (if not relevant, create ~/obsidian/Pavault)
+- tmux with tpm (tpm must be installed seperately)
+- neovim (installed from github guide, not apt)
+
 ## Credits
 
 Credits for the organization and obsidian scripting goes to:
