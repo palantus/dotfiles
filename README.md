@@ -20,6 +20,7 @@ ln -s ~/dotfiles/bin/on.sh ~/.local/bin/on
 - obsidian vault (if not relevant, create ~/obsidian/Pavault)
 - tmux with tpm (tpm must be installed seperately)
 - neovim (installed from github guide, not apt)
+- nerdfont (hack mono)
 
 ## Credits
 
