@@ -2,10 +2,14 @@
 
 ## Configs
 ```bash
+mkdir ~/.config/tmux
 git clone git@github.com:palantus/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/nvim ~/.config/nvim
+ln -s ~/dotfiles/hypr ~/.config/hypr
 ln -s ~/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 ln -s ~/dotfiles/.bashrc ~/.bashrc
+mkdir ~/obsidian
+mkdir ~/obsidian/Pavault
 ```
 
 ## Scripts
